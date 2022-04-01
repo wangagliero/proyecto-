@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <link rel="stylesheet" href="../archivos css/practica.css">
+</head>
+<body>
+
+    <header class="o-header"> 
+        <div class="headerconteiner">
+            <h1> kobu mascotas </h1>
+         
+         <div class="logo">
+             <img src="../imagenes/border collie.webp" alt="logo" class="logoborder"> 
+         </div>
+         
+         <nav class="menu">
+            <a href="index.html"> home</a>
+                 <a href="productos.html">productos</a>
+                  <a href="nosotros.html">nosotros</a>
+                  <a href="precios.html">precios</a>     
+         </nav>
+     
+         </div>
+     </div>
+     </header>
+   
+    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+    <h1>Contacto</h1>
+    <h3>rellena el siguiente formulario y nos pondremos en contacto contigo</h3>
+   <section class="contacto">
+    <div class="formulario nombre">
+        <label for="nombre">nombre</label>
+        <input id="nombre" type="nombre" name="nombre" placeholder="ingresa tu nombre">
+    </div>
+    
+        <div class="formulario apellido">
+            <label for="apellido">apellido</label>
+            <input id="apellido" type="apellido" name="apellido" placeholder="ingresa tu apellido">
+    
+        </div>
+        <div class="formulario email">
+            <label for="email">email</label>
+            <input id="email" type="email" name="email" placeholder="ingresa tu email">
+    
+        </div>
+        <div class="formulario telefono">
+            <label for="telefono">telefono</label>
+            <input id="telefono" type="telefono" name="telefono" placeholder="ingresa tu telefono">
+    
+        </div>
+        <div> 
+            <p1>seleciona tu sexo</p1>
+            <label for="hombre">hombre</label>
+        <input type="radio" name="sexo" value="hombre">
+        <label for="mujer">mujer</label>
+        <input type="radio" name="sexo" value="mujer">
+        <input type="radio" name="sexo" value="otro">
+        <label for="otro">otro</label>
+        
+        </div>
+        <div class="ciudad">
+        <p1>seleciona tu ciudad</p1>
+            <select name="ciudad">
+                <option value="">seleciona una opcion</option>
+                <option value="Quilmes">Quilmes</option>
+                <option value="Villa crespo">Villa crespo</option>
+                <option value="balvanera">balvanera</option>
+                <option value="berazategui">berazategui</option>
+                <option value="recoleta">recoleta</option>
+                <option value="burzaco">burzaco</option>
+                <option value="palermo">palermo</option>
+            </select>
+        </div>
+            <div class="menu">
+                <p1>seleciona el tipo de venta</p1>
+                <select name="ventas x">
+                    <option value="">seleciona una opcion</option>
+                    <option value="mayorista">mayorita</option>
+                    <option value="minorista">minorista</option>
+                    <option value="otra">otra</option>
+                </select>
+            </div>
+            
+            <div class="texto">
+                <label for="deja tu consulta">deja tu consulta</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="deja tu consulta"></textarea>
+            </div>
+            <div>
+                <label for="condiciones">aceptar terminos y condiciones</label>
+                <input type="checkbox" name="acepta"  value="1">
+            </div>
+            <div class="botones">
+                <input type="submit" value="enviar consulta">
+                <input type="reset" value="limpiar formulario">
+        
+                    </div>
+                </section>
+    </fieldset>
+
+
+
+    </form>
+
+    <footer class="o-footer">
+        <a href="consultas.html">consultas</a>
+    </footer>
+
+</body>
+</html>

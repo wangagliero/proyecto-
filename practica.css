@@ -1,0 +1,144 @@
+body{
+    background-color: skyblue ;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100vh auto;
+    
+}
+h1{
+
+    text-align: center;
+    color:white; 
+    line-height: 40px;
+    
+    }
+.o-header{
+   grid-area: header;
+   padding: 1rem; 
+   background-color: rgb(21, 86, 107);
+   
+  
+ 
+}
+.menu{
+    display: inline;
+    float: right;
+    
+}
+a {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: skyblue;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+  } 
+  a:hover {
+    background-color: royalblue;
+
+  }
+.logoborder{
+    border-radius: 50%;
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    transform: 2seg;
+}
+.logoborder:hover{
+ transform: rotate(45deg);
+}
+ 
+.o-main{
+    grid-area: main;
+
+  
+}
+.o-footer{
+    grid-area: footer;
+    padding: 1rem;
+    background-color: rgb(21, 86, 107);
+}
+.imagen4{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    grid-gap: 10px; 
+    transition: height 1s, width2s, transform 2s;
+    
+}
+.imagen4:hover{
+    height: 600px;
+    width: 600px;
+}
+.imagen7{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    grid-gap: 10px; 
+   
+    transition: height 1s, width2s, transform 2s;
+   
+}
+.imagen7:hover{
+    height: 600px;
+    width: 600px;
+}
+
+.flex-conteiner{
+    display: flex;
+    flex-direction: row;
+   align-content: space-around;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+ 
+   
+}
+
+.imagen8{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    grid-gap: 10px; 
+   
+    transition: height 1s, width2s, transform 2s;
+   
+}
+.imagen8:hover{
+    height: 600px;
+    width: 600px;
+}
+.gallery_conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+
+}
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.gallerry-item:nth-child(4) {
+    grid-column-start: span 3;
+
+}
+@media screed and (max-width: 768px){
+    .grid{
+        grid-template-columns: 4, 1fr;
+    }
+    .border{
+        background-color: white;
+    }
+}
+  
